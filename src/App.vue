@@ -2,7 +2,7 @@
     <div id="app">
         <Navbar/>
         <div>
-            <Principal/>
+            <router-view></router-view>
         </div>
         <Footer/>
     </div>
@@ -11,17 +11,13 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
-import Principal from './pages/Principal.vue'
 export default {
     name: 'App',
     components: {
         Navbar,
         Footer,
-         Principal
     },
-    created: {
-       
-    }
+    created: {}
 }
 </script>
 
